@@ -14,26 +14,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Frontend Mentor | QR code component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      
+    <title>Frontend Mentor | NFT preview card component</title>
     </style>
   </head>
   <body>
+    <main>
     <div class="box">
-      <img src="./images/image-qr-code.png" alt="QR code" />
-      <h3>Improve your front-end skills by building projects</h3>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
+      <div class="top-img">
+        <img class="nft" src="./images/image-equilibrium.jpg" alt="NFT" />
+        <div class="eye">
+          <img src="./images/icon-view.svg" alt="eye">
+        </div>
+      </div>
+      <h1 class="white lg title">Equilibrium #3429</h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="info flex">
+        <img class="" src="./images/icon-ethereum.svg" alt="ETH" />
+        <p class="push blue-green med">0.041 ETH</p>
+        <img class="" src="./images/icon-clock.svg" alt="clock" />
+        <p>3 days left</p>
+      </div>
+      <hr />
+      <div class="prof flex">
+        <img class="img-prof" src="./images/image-avatar.png" alt="profile" />
+        <p>Creation of <span class="white nme">Jules Wyvern</span></p>
+      </div>
     </div>
+  </main>
   </body>
 </html>

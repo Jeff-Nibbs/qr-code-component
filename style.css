@@ -1,0 +1,63 @@
+.box {
+  background-color: var(--card-bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 355px;
+  gap: 10px;
+}
+.nft {
+  border-radius: 8px;
+}
+.prof {
+  gap: 15px;
+  align-items: center;
+}
+.img-prof {
+  width: 35px;
+  height: 35px;
+  border: 0.5px solid var(--white);
+  border-radius: 50%;
+}
+.info {
+  align-items: center;
+  gap: 5px;
+}
+.title:hover {
+  color: var(--main-secondary);
+  cursor: pointer;
+}
+.top-img {
+  position: relative;
+  overflow: hidden;
+}
+.top-img > .nft {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+.top-img > .eye {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 255, 247, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-img > .nft, 
+.top-img > .eye {
+  transition: 200ms ease-in-out;
+}
+.top-img > .eye{
+  opacity: 0;
+}
+.top-img:hover > .eye{
+  opacity: 1;
+}
+.nme:hover {
+  color: var(--main-secondary);
+  cursor: pointer;
+}
